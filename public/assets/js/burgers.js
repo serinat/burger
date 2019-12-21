@@ -31,7 +31,7 @@ $(function () {
         type: "PUT",
         data: newBurgerState
       }).then(function () {
-        console.log("ID: " + id + " burger changed to " + !devoured);
+        console.log("ID: " + id + " burger status changed to " + !devoured);
         // Reload the page to get the updated list
         location.reload();
       });

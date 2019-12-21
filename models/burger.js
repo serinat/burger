@@ -13,10 +13,10 @@ var burgers = {
       cb(res);
     });
   },
-  update: function(newStatus, id, cb) {
-    orm.update("burgers", "devoured", newStatus, id, function(res) {
+  update: function(objColVals, condition, cb) {
+    orm.update("burgers", objColVals, condition, function(res) {
       cb(res);
-    })
+    });
   }
 };
 
